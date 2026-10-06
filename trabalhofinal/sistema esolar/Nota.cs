@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace trabalhofinal.sistema_esolar
+﻿
+    namespace TrabalhoFinal.Dominio
 {
     internal class Nota
     {
@@ -14,7 +9,7 @@ namespace trabalhofinal.sistema_esolar
 
         public string Disciplina { get; set; }
 
-        public string Bimestre { get; set; }
+        public int Bimestre { get; set; }
 
         public int Media_Final { get; set; }
 
