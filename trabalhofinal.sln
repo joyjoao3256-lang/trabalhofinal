@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "service", "service", "{02EA
 		trabalhofinal\Dominio\NotaService.cs = trabalhofinal\Dominio\NotaService.cs
 		trabalhofinal\Dominio\ProfessoresService.cs = trabalhofinal\Dominio\ProfessoresService.cs
 		trabalhofinal\Service.cs = trabalhofinal\Service.cs
+		trabalhofinal\Dominio\TurmaService.cs = trabalhofinal\Dominio\TurmaService.cs
 	EndProjectSection
 EndProject
 Global
