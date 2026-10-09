@@ -1,52 +1,21 @@
-<<<<<<< HEAD
-﻿using System;
-using trabalhofinal;
-using TrabalhoFinal.Servicos;
-
-ProfessoresService.Listar();
-
-Console.WriteLine("Digite o nome do professor que deseja cadastrar:");
-string nome = Console.ReadLine() ?? "";
-
-Console.WriteLine("Digite o email do professor:");
-string email = Console.ReadLine() ?? "";
-
-Console.WriteLine("Digite a data de nascimento (dd/MM/yyyy):");
-string entradaData = Console.ReadLine() ?? "";
-
-if (DateTime.TryParseExact(
-    entradaData,
-    "dd/MM/yyyy",
-    System.Globalization.CultureInfo.GetCultureInfo("pt-BR"),
-    System.Globalization.DateTimeStyles.None,
-    out DateTime dataNascimento)
-    && dataNascimento <= DateTime.Today)
-{
-    ProfessoresService.Adicionar(nome, email, dataNascimento);
-
-    Console.WriteLine("Professor cadastrado com sucesso!");
-}
-else
-{
-    Console.WriteLine("Data inválida. Digite uma data válida no formato dd/MM/yyyy.");
-}
-
-Console.WriteLine("\nLista atualizada de professores:");
-ProfessoresService.Listar();
-
-Console.WriteLine("\nPressione qualquer tecla para sair.");
-Console.ReadKey();
-=======
-﻿
 using TrabalhoFinal.Dominio;
 using TrabalhoFinal.Servicos;
-PessoaService.Listar();
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        TurmaService.Listar();
 
-Console.WriteLine("Digite o nome da pessoa que deseja cadsatrar?");
-string nome = Console.ReadLine();
-Console.WriteLine("Digite o nome da pessoa que deseja cadsatrar?");
-string email = Console.ReadLine();
-DateTime data_Nacimento = DateTime.Now;
-PessoaService.Adicionar(nome, email, data_Nacimento);
-PessoaService.Listar();
->>>>>>> c00365754a4b676292f6ce5222d1834a09e3dc5e
+        //Console.WriteLine("Digite o nome do aluno");
+        //string nome = Console.ReadLine();
+        //Console.WriteLine("Digite o nome da sala do aluno");
+        //int sala = Console.ReadLine();
+        //DateTime AnoLetivo = DateTime.Now;
+        //TurmaService.Adicionar(nome, sala, AnoLetivo);
+        TurmaService.Listar();
+        Console.WriteLine("Digite o Id do usuario que deseja excluir");
+        int id = int.Parse(Console.ReadLine());
+        TurmaService.Remover(id);
+        TurmaService.Editar(4, 2, "201", 2027, 40);
+    }
+}
