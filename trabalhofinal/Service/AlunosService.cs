@@ -2,17 +2,17 @@
 
 namespace trabalhofinal.Service;
 
-    public static class AlunosService
-    {
-        public static List<Alunos> aluno { get; set; }
-            = new List<Alunos>()
-            {
+public static class AlunosService
+{
+    public static List<Alunos> aluno { get; set; }
+        = new List<Alunos>()
+        {
                 new Alunos(){ Id=1,Turma="Primeiro Ano",Nome="Robert", Idade=19, Matricula="Particular" },
                 new Alunos(){ Id=2,Turma="Segundo Ano",Nome="Duda", Idade=17, Matricula="Publica" },
                  new Alunos(){ Id=3,Turma="Terceiro Ano",Nome="Augusto", Idade=18, Matricula="Publica" },
 
 
-             };
+         };
     public static void Remover(int id)
     {
         Alunos A = aluno.Find(aluno => aluno.Id == 3);
@@ -31,7 +31,7 @@ namespace trabalhofinal.Service;
         Alunos A = aluno.Find(pessoa => pessoa.Id == id);
         if (A != null)
         {
-           
+
             A.Turma = novoTurma;
             A.Nome = novoNome;
             A.Idade = novoIdade;
@@ -44,13 +44,13 @@ namespace trabalhofinal.Service;
         }
     }
     public static void Adicionar(string Nome
-        , string turma ,int Idade, string Matricula)
+        , string turma, int Idade, string Matricula)
     {
         Alunos aluno = new Alunos();
         aluno.Nome = "Robertin";
         aluno.Turma = "Segundo ano";
         aluno.Matricula = "Particular";
-        aluno.Idade= 18;
+        aluno.Idade = 18;
     }
     public static void Listar()
     {
