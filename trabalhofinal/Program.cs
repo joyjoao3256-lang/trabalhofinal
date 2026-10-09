@@ -1,4 +1,4 @@
-﻿using TrabalhoFinal.Dominio;
+using TrabalhoFinal.Dominio;
 using TrabalhoFinal.Servicos;
 internal class Program
 {
