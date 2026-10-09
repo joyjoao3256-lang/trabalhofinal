@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="views\" />
+    <Folder Include="Views\" />
   </ItemGroup>
 
 </Project>
