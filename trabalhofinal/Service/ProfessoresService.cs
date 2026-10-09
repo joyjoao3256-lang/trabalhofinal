@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using trabalhofinal;
-using TrabalhoFinal;
 
-namespace TrabalhoFinal.Servicos
+namespace trabalhofinal.Service
 {
     public static class ProfessoresService
     {
