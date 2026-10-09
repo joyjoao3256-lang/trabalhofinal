@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 using trabalhofinal;
 using TrabalhoFinal.Servicos;
@@ -35,3 +36,17 @@ ProfessoresService.Listar();
 
 Console.WriteLine("\nPressione qualquer tecla para sair.");
 Console.ReadKey();
+=======
+﻿
+using TrabalhoFinal.Dominio;
+using TrabalhoFinal.Servicos;
+PessoaService.Listar();
+
+Console.WriteLine("Digite o nome da pessoa que deseja cadsatrar?");
+string nome = Console.ReadLine();
+Console.WriteLine("Digite o nome da pessoa que deseja cadsatrar?");
+string email = Console.ReadLine();
+DateTime data_Nacimento = DateTime.Now;
+PessoaService.Adicionar(nome, email, data_Nacimento);
+PessoaService.Listar();
+>>>>>>> c00365754a4b676292f6ce5222d1834a09e3dc5e
