@@ -1,6 +1,6 @@
 ﻿using TrabalhoFinal.Dominio;
 
-namespace TrabalhoFinal.Servicos
+namespace trabalhofinal.Service
 {
     public static class TurmaService
     {

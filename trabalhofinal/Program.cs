@@ -1,5 +1,4 @@
 using TrabalhoFinal.Dominio;
-using TrabalhoFinal.Servicos;
 internal class Program
 {
     private static void Main(string[] args)

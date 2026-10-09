@@ -1,5 +1,5 @@
 ﻿
-namespace trabalhofinal
+namespace trabalhofinal.Dominio
 {
     public class Alunos
     {
@@ -9,7 +9,7 @@ namespace trabalhofinal
 
         public string Nome { get; set; }
 
-        public string Idade { get; set; }
+        public int Idade { get; set; }
 
         public string Matricula { get; set; }
 
