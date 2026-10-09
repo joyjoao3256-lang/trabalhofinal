@@ -65,11 +65,23 @@ namespace TrabalhoFinal.Servicos
                 Console.WriteLine("---------------------");
             }
         }
+
         public static void BuscarPorId(int id)
         {
+            foreach (turma turmas in turmas)
+            {
+                if (turmas.Id == id)
+                {
+                    Console.WriteLine("ID: " + turmas.Id);
+                    Console.WriteLine("Serie: " + turmas.Serie);
+                    Console.WriteLine("Turma: " + turmas.NomeTurma);
+                    Console.WriteLine("Ano: " + turmas.AnoLetivo);
+                    Console.WriteLine("Alunos: " + turmas.Alunos);
+                    return;
+                }
+            }
 
-            // Passo um Id por parametro e o metodo
-            // lista as informações detalhadas da pessoa
+            Console.WriteLine("Pessoa não encontrada.");
         }
     }
-}
+    }
