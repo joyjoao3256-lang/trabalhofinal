@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace trabalhofinal.sistema_esolar
+namespace trabalhofinal
 {
-    public class ProfessoresService
+    class Service
     {
-       
     }
 }
