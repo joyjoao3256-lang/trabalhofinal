@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace trabalhofinal
 {
-    public class Professores
+    
    public class Professores()
     {
         public int Id { get; set; }
