@@ -1,7 +1,7 @@
 ﻿
     namespace TrabalhoFinal.Dominio
 {
-    internal class Nota
+    public class Nota
     {
         public int Id { get; set; }
 
